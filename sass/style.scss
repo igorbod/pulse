@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+
+
+* {
+  font-family: 'Museo', sans-serif;
+}
+
+h1, h2 {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
