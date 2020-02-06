@@ -47,6 +47,21 @@
       }
     }
   }
+
+  .consultation {
+    padding-left: 20px;
+    padding-right: 20px;
+    .section {
+      &__title {
+        &_left {
+          text-align: center;
+        }
+      }
+    }
+    .feed-form {
+      margin-left: 30px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -143,4 +158,35 @@
 
   }
 
+  .consultation {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .section {
+      &__title {
+        &_left {
+          font-size: 30px;
+        }
+      }
+    }
+
+    &__descr {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .feed-form {
+      margin-left: 0;
+      width: 280px;
+      input {
+        width: 280px;
+      }
+    }
+  }
 }
