@@ -1,11 +1,13 @@
 @import 'variables';
 @import 'mixins';
+@import 'titles';
+@import 'forms';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
+@import 'blocks/consultation';
 @import 'media';
-
 
 * {
   font-family: 'Museo', sans-serif;
@@ -18,15 +20,4 @@ h1, h2 {
 .container {
   max-width: 950px;
   margin: 0 auto;
-}
-
-.section {
-  &__title {
-    color: #0d0d0d;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-  }
 }
