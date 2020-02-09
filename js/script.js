@@ -76,4 +76,16 @@ $(document).ready(function () {
     });
   });
 
+  // $('.overlay').on('click', function() {
+  //   $('.overlay, #consultation, #order, #thanks').fadeOut();
+  // });
+
+  $(document).mouseup(function (e) { // event click on document
+    var div = $('#consultation'); // element ID
+    if (!div.is(e.target) // if click was not on our element
+        && div.has(e.target).length === 0) { // and not child elements 
+        $('.overlay, #consultation, #order, #thanks').fadeOut(); // hide
+     }
+  });
+
 });

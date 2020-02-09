@@ -303,4 +303,23 @@
       font-size: 18px;
     }
   }
+
+  .modal {
+    width: 280px;
+    padding: 15px;
+    
+    &__close {
+      top: 3px;
+      right: 5px;
+    }
+    &__title {
+      margin-top: 25px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+    
+    .feed-form {
+      width: 100%;
+    }  
+  }
 }
