@@ -7,23 +7,6 @@ $(document).ready(function () {
     controls: false,
     nav: false,
     speed: 1000
-    // responsive: {
-    //   575: {
-    //     edgePadding: 20,
-    //     gutter: 20,
-    //     items: 1
-    //   },
-    //   767: {
-    //     gutter: 150
-    //   },
-    //   991: {
-    //     items: 1,
-    //     gutter: 100
-    //   },
-    //   1200: {
-
-    //   }
-    // }
   });
 
   document.querySelector('.prev').addEventListener('click', function () {
@@ -71,5 +54,26 @@ $(document).ready(function () {
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+    
+  /* Modal windows */
+
+  // click on "order" button
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn();
+  });
+
+  // click on "close" button in modal
+  $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #order, #thanks').fadeOut();
+  });
+
+  // click on "buy" button
+  $('.button_mini').each(function(i) {
+    $(this).on('click', function() {
+      $('#order .modal__subtitle').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn();
+    });
+  });
 
 });
