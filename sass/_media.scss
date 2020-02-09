@@ -133,6 +133,28 @@
       padding: 0 20px;
     }
   }
+
+  .reviews {
+    &__wrapper {
+      margin-top: 35px;
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    &__photo {
+      margin-right: 0;
+    }
+
+    &__info {
+      margin-top: 25px;
+      padding: 0 25px;
+    }
+  }
   
 }
 
