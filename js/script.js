@@ -5,7 +5,25 @@ $(document).ready(function () {
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    nav: false
+    nav: false,
+    speed: 1000
+    // responsive: {
+    //   575: {
+    //     edgePadding: 20,
+    //     gutter: 20,
+    //     items: 1
+    //   },
+    //   767: {
+    //     gutter: 150
+    //   },
+    //   991: {
+    //     items: 1,
+    //     gutter: 100
+    //   },
+    //   1200: {
+
+    //   }
+    // }
   });
 
   document.querySelector('.prev').addEventListener('click', function () {
@@ -49,7 +67,7 @@ $(document).ready(function () {
         $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
       });
     });
-  };
+  }
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
