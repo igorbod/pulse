@@ -12,4 +12,15 @@
     line-height: normal;
   }
 
+  .error {
+    border: 1px solid $main-color;
+  }
+
+  label.error {
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    margin-top: 5px;
+  }
+
 }
