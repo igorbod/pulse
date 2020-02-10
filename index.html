@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -76,7 +77,7 @@
 
         <div class="advantages__item">
           <div class="advantages__icon">
-            <img src="img/advantages/icon-heart.jpg" alt="heart">
+            <img src="img/advantages/icon-heart.jpg" alt="heart" class="advantages__icon_animate">
           </div>
           <div class="advantages__title">
             Заботимся о здоровье
@@ -488,7 +489,7 @@
      <h2 class="section__title">отзывы клиентов</h2>
       <div class="reviews__wrapper">
         
-        <div class="reviews__content">
+        <div class="reviews__content fadeInLeft wow" data-wow-duration="1s" data-wow-delay="0.3s">
           <img src="img/reviews/img-1.png" alt="photo" class="reviews__photo">
           <div class="reviews__info">
             <div class="reviews__name">
@@ -504,7 +505,7 @@
           </div>
         </div>
 
-        <div class="reviews__content">
+        <div class="reviews__content fadeInRight wow" data-wow-duration="1s" data-wow-delay="0.5s">
           <img src="img/reviews/img-2.png" alt="photo" class="reviews__photo">
           <div class="reviews__info">
             <div class="reviews__name">
@@ -521,7 +522,7 @@
           </div>
         </div>
 
-        <div class="reviews__content">
+        <div class="reviews__content fadeInLeft wow" data-wow-duration="1s" data-wow-delay="0.7s">
           <img src="img/reviews/img-3.png" alt="photo" class="reviews__photo">
           <div class="reviews__info">
             <div class="reviews__name">
@@ -614,6 +615,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>

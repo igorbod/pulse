@@ -21,6 +21,16 @@
     img {
       width: 100%;
     }
+    &_animate {
+      animation:heartbeat 1s ease infinite;
+      // animation-name: heartbeat;
+      // animation-duration: 1s;
+      // animation-timing-function: ease;
+      // animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
   }
 
   &__title {
